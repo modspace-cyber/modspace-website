@@ -18,13 +18,13 @@ export function Hero() {
           className="max-w-xl z-10"
         >
           <h1 className="font-serif text-5xl md:text-7xl leading-tight mb-6 text-[var(--color-text-dark)]">
-            Elevate your space with custom-made furniture
+            Modify your space with Modspace Interior
           </h1>
           <p className="text-neutral-500 text-lg mb-10 leading-relaxed font-sans">
-            Handcrafted furniture pieces with perfect attention to detail. We bring your vision to life, creating spaces that feel uniquely yours.
+            We bring your vision to life, creating spaces that feel uniquely yours.
           </p>
           <div className="flex flex-wrap gap-4 mb-12">
-            <Button variant="solid">Get a quote</Button>
+            <Button variant="solid">Get in touch</Button>
             <Button variant="outline">View portfolio</Button>
           </div>
           <div className="flex items-center gap-6 text-[var(--color-text-dark)]">

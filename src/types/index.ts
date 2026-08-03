@@ -1,4 +1,4 @@
-export type VariantType = "solid" | "glassmorph";
+export type VariantType = "solid" | "glassmorph" | "outlinebg";
 
 export interface BaseProps {
   className?: string;

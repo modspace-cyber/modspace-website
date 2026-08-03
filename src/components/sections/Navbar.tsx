@@ -22,8 +22,8 @@ export function Navbar() {
     <>
       {/* Mobile bar */}
       <div className="md:hidden fixed top-0 left-0 right-0 h-16 bg-[var(--color-dark-primary)] px-5 box-border z-50 flex items-center justify-between">
-        <Link href="/" className="inline-block hover:scale-[1.2] transition-transform duration-300 origin-left">
-          <HeaderLogo videoSrc="" theme="dark" className="w-[60px] h-[60px]" />
+        <Link href="/" className="inline-block hover:scale-[1.05] transition-transform duration-300">
+          <span className="text-white font-serif text-lg font-bold">MOD SPACE INTERIOR</span>
         </Link>
         <button
           className="p-2 text-white focus:outline-none"
@@ -42,15 +42,11 @@ export function Navbar() {
             : "bg-transparent h-24 px-24 py-2.5"
         )}
       >
-        <Link href="/" className="inline-block hover:scale-[1.2] transition-transform duration-300 origin-left">
-          <HeaderLogo
-            videoSrc=""
-            theme={isScrolled ? "dark" : "light"}
-            className={cn(
-              "transition-[width,height] duration-[800ms]",
-              isScrolled ? "w-[65px] h-[65px]" : "w-[85px] h-[85px]"
-            )}
-          />
+        <Link href="/" className="inline-block hover:scale-[1.05] transition-transform duration-300">
+          <span className={cn(
+            "font-serif font-bold transition-all duration-[800ms]",
+            isScrolled ? "text-white text-xl" : "text-[var(--color-text-dark)] text-2xl"
+          )}>MOD SPACE INTERIOR</span>
         </Link>
 
         <ul className="flex items-center gap-6 font-manrope text-sm font-medium">
