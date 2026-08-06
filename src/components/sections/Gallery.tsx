@@ -7,10 +7,10 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 
 const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop", alt: "Modern armchair" },
-  { src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop", alt: "Living room setup" },
-  { src: "https://images.unsplash.com/photo-1618220179428-22790b46a0eb?q=80&w=2574&auto=format&fit=crop", alt: "Bedroom interior" },
-  { src: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop", alt: "Sofa detail" }
+  { src: "/portfolio/modular-kitchen-1.jpg", alt: "Modern Modular Kitchen" },
+  { src: "/portfolio/modular-wardrobe-1.jpg", alt: "Sleek Modular Wardrobe" },
+  { src: "/portfolio/lighting-1.jpg", alt: "Modern Lighting Design" },
+  { src: "/portfolio/flooring-1.jpg", alt: "Premium Flooring" }
 ];
 
 export function Gallery() {

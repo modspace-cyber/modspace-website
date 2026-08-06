@@ -37,7 +37,7 @@ export function About() {
           <div className="grid grid-cols-2 gap-4 h-[500px] lg:h-[600px]">
             <div className="col-span-1 relative rounded-2xl overflow-hidden h-full">
               <Image
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2574&auto=format&fit=crop"
+                src="/portfolio/modular-wardrobe-1.jpg"
                 alt="Living room setup"
                 fill
                 className="object-cover"
@@ -47,7 +47,7 @@ export function About() {
             <div className="col-span-1 grid grid-rows-2 gap-4">
               <div className="relative rounded-2xl overflow-hidden h-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?q=80&w=2070&auto=format&fit=crop"
+                  src="/portfolio/lighting-2.jpg"
                   alt="Craftsmanship detail"
                   fill
                   className="object-cover"
@@ -56,7 +56,7 @@ export function About() {
               </div>
               <div className="relative rounded-2xl overflow-hidden h-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2070&auto=format&fit=crop"
+                  src="/portfolio/false-ceiling-1.jpg"
                   alt="Modern chair"
                   fill
                   className="object-cover"
