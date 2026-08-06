@@ -31,7 +31,7 @@ export function About() {
                 Every piece that leaves our workshop is a testament to our dedication to quality. From selecting the finest sustainable materials to the final hand-polished finish, our artisans pour their passion into creating furniture that tells a story.
               </p>
             </div>
-            <Button variant="outline">Get in touch</Button>
+            <Button variant="outlinebg">Get in touch</Button>
           </div>
 
           <div className="grid grid-cols-2 gap-4 h-[500px] lg:h-[600px]">

@@ -7,32 +7,65 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-  { value: 3, label: "Cities" },
+  { value: 5, label: "Cities" },
   { value: 100, label: "Satisfied Customers" },
   { value: 300, label: "Custom Furnitures" },
   { value: 1100, label: "Unique Ideas and Designs" }
 ];
 
+export const GOOGLE_REVIEWS = [
+  {
+    name: "Prashant Raghav",
+    rating: 5,
+    text: "I recently used \"Mod Space Interior\" to redesign my home, and the experience was absolutely fantastic. From the initial consultation to the final reveal, they went above and beyond to ensure every detail was just right. The team was incredibly professional and had a keen eye for design, perfectly balancing style and functionality. They took my ideas to heart, adding their expertise to create a space that truly feels like home. I've received so many compliments from friends and family – I couldn't be happier with the outcome. I highly recommend \"Mod Space Interior\" for anyone looking to transform their space with a professional, creative, and reliable team. It was truly worth every penny."
+  },
+  {
+    name: "AMAN KUMAR",
+    rating: 5,
+    text: "Extremely satisfied with the service provided by Mod Space Interior Designers. Their team was professional, attentive, and truly understood my vision. They transformed my space into a beautiful and functional area that reflects my style perfectly. Communication was seamless throughout the process, and their attention to detail was impressive. I highly recommend Mod Space for anyone looking to enhance their interiors."
+  },
+  {
+    name: "Navneet Sagar",
+    rating: 5,
+    text: "Highly professional and creative team! Mod Space Interior transformed our space beautifully with their innovative designs and attention to detail. The project was delivered on time, and the quality of work was exceptional. If you're looking for a reliable interior designer in Noida, I highly recommend Mod Space Interior!"
+  },
+  {
+    name: "Ashok Upadhyay",
+    rating: 5,
+    text: "Very attractive and very affective interior and design 👌 had done in my home at very affordable money how he managed I was not supposed like this in short time. Good service 👍 keep on doing 👍 Good job. Like to thanks shukla ji."
+  },
+  {
+    name: "Saurav Kumar",
+    rating: 5,
+    text: "I am extremely pleased with the work done by Mod Space for both my home and office interiors. They exceeded my expectations with their creativity and attention to detail. I can guarantee that this is the best interior designer in Delhi NCR."
+  },
+  {
+    name: "ritik jha",
+    rating: 5,
+    text: "Superb service at an affordable rate. Excellent design with good service"
+  }
+];
+
 export const FAQ_ITEMS = [
   {
     question: "Where are you located?",
-    answer: "We are based in New York City, but we offer our services globally through remote consultations and secure shipping."
+    answer: "We are based in Noida, Uttar Pradesh, and proudly serve clients across the entire Delhi NCR region. We also offer remote design consultations and pan-India support."
   },
   {
     question: "Do you offer custom furniture design?",
-    answer: "Yes! Custom furniture design is our specialty. We work closely with you to create pieces that perfectly fit your space and style."
+    answer: "Absolutely! Custom modular furniture is our specialty. From bespoke wardrobes and modular kitchens to stylish TV units and storage solutions, we design and build every piece to fit your exact space dimensions, lifestyle needs, and budget."
   },
   {
-    question: "How long does it take to receive custom furniture?",
-    answer: "Typically, custom pieces take between 6 to 12 weeks from design approval to delivery, depending on the complexity and materials."
+    question: "How long does it take to complete an interior project?",
+    answer: "Project timelines typically range between 4 to 8 weeks, depending on the scope of work, material selection, and on-site civil requirements. We provide a detailed project roadmap during the consultation to ensure complete transparency on delivery."
   },
   {
     question: "What is your design philosophy?",
-    answer: "We believe in the perfect balance of form and function. Our designs are timeless, comfortable, and tailored to elevate your everyday living."
+    answer: "Our philosophy is built around 'Smart Living.' We believe in maximizing every square foot of your home without compromising on aesthetics. Our designs blend contemporary style with practical functionality, ensuring your space feels both luxurious and effortlessly livable."
   },
   {
     question: "How can I contact you?",
-    answer: "You can reach us at info@example.com or use the 'Book a consultation' button to schedule a call with our team."
+    answer: "You can reach out to us at modspacenoida@gmail.com or give us a call at +91-9718552104. For a quicker response, call us to schedule a free site visit and brainstorming session with our expert design team."
   }
 ];
 

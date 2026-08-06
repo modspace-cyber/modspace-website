@@ -21,7 +21,7 @@ export function FAQ() {
               Frequently Asked Questions
             </h2>
             <p className="text-[var(--color-muted-gray)] font-sans text-lg mb-8">
-              Find answers to common questions about our custom furniture design and delivery process.
+              Find answers to common questions about Modspace Interior.
             </p>
           </div>
           

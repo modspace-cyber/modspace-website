@@ -8,20 +8,20 @@ import { VariantType } from "@/types";
 
 const services = [
   {
-    title: "Custom Seating",
-    description: "Ergonomically designed chairs and sofas tailored to your specific comfort needs and style preferences.",
+    title: "Residential Interior Design",
+    description: "Bespoke interior architecture, custom cabinetry, and curated furnishings crafted for luxurious personal living spaces.",
     icon: Armchair,
     variant: "solid" as VariantType,
   },
   {
-    title: "Dining Sets",
-    description: "Handcrafted tables and dining chairs that become the centerpiece of your family gatherings and meals.",
+    title: "Commercial & Corporate Fit-Outs",
+    description: "Turnkey office and retail environments engineered for productivity, brand presence, and seamless spatial flow.",
     icon: Table,
     variant: "glassmorph" as VariantType,
   },
   {
-    title: "Living Room Sets",
-    description: "Complete living room solutions, from sectionals to coffee tables, designed in perfect harmony.",
+    title: "Sectors & Specializations",
+    description: "Hospitality, Fine Dining, Luxury Retail, Healthcare Facilities, and Corporate Headquarters.",
     icon: Sofa,
     variant: "solid" as VariantType,
   }
@@ -35,10 +35,10 @@ export function Services() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl text-[var(--color-text-dark)] mb-4">
-            This is what we're best at
+            What We Do Best
           </h2>
           <p className="text-neutral-500 max-w-2xl mx-auto font-sans text-lg">
-            Our expertise spans across various furniture types, each crafted with the same dedication to quality and design.
+            Bringing your ideas to life with personal care, transparent processes, and uncompromised quality.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export function Services() {
                 <p className="text-neutral-600 mb-8 flex-grow leading-relaxed">
                   {service.description}
                 </p>
-                <a href="#" className="font-manrope text-[var(--color-accent-gold)] font-semibold hover:text-[var(--color-dark-primary)] transition-colors inline-flex items-center gap-2 mt-auto">
+                <a href="https://wa.me/+919718552104?text=%22Hi%20ModSpace%20Interior!%20I%20was%20exploring%20your%20website%20and%20would%20like%20to%20consult%20with%20your%20design%20team%20regarding%20a%20project." target="_blank" rel="noopener noreferrer" className="font-manrope text-[var(--color-accent-gold)] font-semibold hover:text-[var(--color-dark-primary)] transition-colors inline-flex items-center gap-2 mt-auto">
                   Get a quote <span aria-hidden="true">&rarr;</span>
                 </a>
               </Card>

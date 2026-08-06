@@ -16,6 +16,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           variant === "solid" && "bg-[var(--color-dark-primary)] text-[var(--color-light-primary)] hover:bg-neutral-800",
           variant === "glassmorph" && "glassmorph text-[var(--color-text-dark)] hover:bg-white/30",
           variant === "outline" && "border border-[var(--color-accent-gold)] text-[var(--color-text-dark)] hover:bg-[var(--color-accent-gold)] hover:text-white",
+          variant === "outlinebg" && "border border-[var(--color-accent-gold)] text-white hover:bg-[var(--color-accent-gold)] hover:text-white",
           className
         )}
         {...props}
