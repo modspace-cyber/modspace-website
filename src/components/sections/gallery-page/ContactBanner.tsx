@@ -1,6 +1,10 @@
-import { Button } from "@/components/ui/Button";
+"use client";
+
+import { useFormModal } from "@/components/ui/FormModal";
 
 export function ContactBanner() {
+  const { openModal } = useFormModal();
+
   return (
     <section id="contact" className="py-24 bg-[var(--color-accent-gold)] text-[var(--color-dark-primary)]">
       <div className="container mx-auto px-6 md:px-12 text-center">
@@ -23,11 +27,12 @@ export function ContactBanner() {
             <a href="mailto:interiormodspace@gmail.com" className="hover:underline">interiormodspace@gmail.com</a>
           </div>
         </div>
-        <a href="https://wa.me/+919718552104?text=%22Hi%20ModSpace%20Interior!%20I%20was%20exploring%20your%20website%20and%20would%20like%20to%20consult%20with%20your%20design%20team%20regarding%20a%20project." target="_blank" rel="noopener noreferrer">
-        <Button variant="solid" className="bg-[var(--color-dark-primary)] text-white hover:bg-neutral-800">
+        <button
+          onClick={() => openModal("callback")}
+          className="bg-[var(--color-dark-primary)] text-white px-8 py-3 rounded-lg font-semibold hover:bg-neutral-800 transition-colors"
+        >
           Book a consultation
-        </Button>
-        </a>
+        </button>
       </div>
     </section>
   );
