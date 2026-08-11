@@ -5,21 +5,26 @@ import { About } from "@/components/sections/About";
 import { Services } from "@/components/sections/Services";
 import { Gallery } from "@/components/sections/Gallery";
 import { Testimonial } from "@/components/sections/Testimonial";
+import { InstagramFeed } from "@/components/sections/InstagramFeed";
 import { FAQ } from "@/components/sections/FAQ";
 import { Footer } from "@/components/sections/Footer";
+import { FormModalProvider } from "@/components/ui/FormModal";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <Stats />
-      <About />
-      <Services />
-      <Gallery />
-      <Testimonial />
-      <FAQ />
-      <Footer />
-    </main>
+    <FormModalProvider>
+      <main>
+        <Navbar />
+        <Hero />
+        <Stats />
+        <About />
+        <Services />
+        <Gallery />
+        <Testimonial />
+        <InstagramFeed />
+        <FAQ />
+        <Footer />
+      </main>
+    </FormModalProvider>
   );
 }
