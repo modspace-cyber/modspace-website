@@ -4,7 +4,7 @@ export const NAV_LINKS = [
   { name: "Services", href: "#services" },
   { name: "Gallery", href: "/gallery" },
   { name: "Contact", href: "/gallery#contact" },
-  { name: "FAQs", href: "/faq" },
+  { name: "FAQs", href: "/#faq" },
 ];
 
 export const STATS = [

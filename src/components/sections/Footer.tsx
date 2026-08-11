@@ -1,7 +1,6 @@
 "use client";
 
 import { NAV_LINKS } from "@/lib/constants";
-import { Button } from "@/components/ui/Button";
 
 export function Footer() {
   return (
@@ -13,21 +12,27 @@ export function Footer() {
               MOD SPACE INTERIOR
             </h2>
             <p className="text-neutral-400 max-w-xs font-sans">
-              Elevating spaces with Luxury Interiors. Designed for comfort, built to last.
+              We bring your vision to life, creating spaces that feel uniquely yours.
             </p>
           </div>
-          
-          <div className="flex flex-col items-center md:items-end w-full ">
-            <h3 className="font-manrope font-semibold text-lg mb-6 text-white">Stay inspired</h3>
-            <div className="flex w-full max-w-[33%] items-center gap-2 relative">
-              <input
-                type="email"
-                placeholder="Your Email here"
-                className="w-full h-12 rounded-full bg-white/5 border border-white/10 px-6 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-gold)] transition-all placeholder:text-neutral-500 text-white"
-              />
-              <Button variant="outline" className="absolute right-1 top-1 bottom-1 h-10 px-6 py-0 border-white/20 text-white hover:border-[var(--color-accent-gold)]">
-                Subscribe
-              </Button>
+
+          <div className="flex flex-col items-center md:items-end w-full">
+            <h3 className="font-manrope font-semibold text-lg mb-6 text-white">Contact Info</h3>
+            <div className="flex flex-col items-center md:items-end gap-4 text-neutral-400">
+              <a
+                href="https://share.google/Vztbe41gOl1Iyzgch"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--color-accent-gold)] transition-colors"
+              >
+                Address: gali no 8A, Babu Ram colony, Plot no 7, Sector 81, Salarpur, Noida, Uttar Pradesh - 201305
+              </a>
+              <a
+                href="tel:+919718552104"
+                className="hover:text-[var(--color-accent-gold)] transition-colors"
+              >
+                Phone: +919718552104
+              </a>
             </div>
           </div>
         </div>
