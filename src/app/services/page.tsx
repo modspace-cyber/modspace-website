@@ -2,8 +2,8 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { ServicesHero } from "@/components/sections/services-page/ServicesHero";
 import { ServiceOfferings } from "@/components/sections/services-page/ServiceOfferings";
+import { DetailedServiceOfferings } from "@/components/sections/services-page/DetailedServiceOfferings";
 import { WorkProcess } from "@/components/sections/services-page/WorkProcess";
-import { DeliverableMatrix } from "@/components/sections/services-page/DeliverableMatrix";
 import { QualityStandards } from "@/components/sections/services-page/QualityStandards";
 import { ServicesFAQ } from "@/components/sections/services-page/ServicesFAQ";
 import { ConsultationHub } from "@/components/sections/services-page/ConsultationHub";
@@ -21,8 +21,8 @@ export default function ServicesPage() {
         <Navbar />
         <ServicesHero />
         <ServiceOfferings />
+        <DetailedServiceOfferings />
         <WorkProcess />
-        <DeliverableMatrix />
         <QualityStandards />
         <ServicesFAQ />
         <ConsultationHub />
