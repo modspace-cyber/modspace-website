@@ -81,9 +81,10 @@ export function InstagramFeed() {
                 exit={{ opacity: 0, x: -24 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
                 className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
+                suppressHydrationWarning
               >
                 {visiblePosts.map((url, i) => (
-                  <div key={i} className="flex justify-center overflow-hidden rounded-lg">
+                  <div key={i} className="flex justify-center overflow-hidden rounded-lg" suppressHydrationWarning>
                     <InstagramEmbed url={url} width={328} />
                   </div>
                 ))}
