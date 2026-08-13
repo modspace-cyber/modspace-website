@@ -59,7 +59,7 @@ export function Services() {
                 <p className="text-neutral-600 mb-8 flex-grow leading-relaxed">
                   {service.description}
                 </p>
-                <a href="https://wa.me/+919718552104?text=%22Hi%20ModSpace%20Interior!%20I%20was%20exploring%20your%20website%20and%20would%20like%20to%20consult%20with%20your%20design%20team%20regarding%20a%20project." target="_blank" rel="noopener noreferrer" className="font-manrope text-[var(--color-accent-gold)] font-semibold hover:text-[var(--color-dark-primary)] transition-colors inline-flex items-center gap-2 mt-auto">
+                <a href="https://wa.me/+919718552104?text=%22Hi%20ModSpace%20Interior!%20I%20was%20exploring%20your%20website%20and%20would%20like%20to%20consult%20with%20your%20design%20team%20regarding%20a%20project." target="_blank" rel="noopener noreferrer" className="font-sans text-[var(--color-accent-gold)] font-semibold hover:text-[var(--color-dark-primary)] transition-colors inline-flex items-center gap-2 mt-auto">
                   Get a quote <span aria-hidden="true">&rarr;</span>
                 </a>
               </Card>

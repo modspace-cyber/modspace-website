@@ -283,7 +283,7 @@ export function Footer() {
 
             {/* Column 2: Services */}
             <div>
-              <h3 className="font-manrope font-semibold text-lg mb-6 text-white">Explore Services</h3>
+              <h3 className="font-sans font-semibold text-lg mb-6 text-white">Explore Services</h3>
               <div className="flex flex-col gap-4">
                 {SERVICE_CATEGORIES.map((service) => (
                   <button
@@ -318,7 +318,7 @@ export function Footer() {
 
             {/* Column 3: Contact */}
             <div>
-              <h3 className="font-manrope font-semibold text-lg mb-6 text-[var(--color-accent-gold)]">Contact Us</h3>
+              <h3 className="font-sans font-semibold text-lg mb-6 text-[var(--color-accent-gold)]">Contact Us</h3>
               <div className="flex flex-col gap-6">
                 {/* Address */}
                 <div className="flex gap-3">
@@ -359,7 +359,7 @@ export function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="text-center text-sm text-neutral-500 font-manrope">
+          <div className="text-center text-sm text-neutral-500 font-sans">
             <p>&copy; {new Date().getFullYear()} MODSPACE INTERIOR. All rights reserved.</p>
           </div>
         </div>

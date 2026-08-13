@@ -56,13 +56,13 @@ function ReviewCard({ name, rating, text }: { name: string; rating: number; text
     <div className="bg-white rounded-xl border border-neutral-200 shadow-sm p-6 flex flex-col h-full">
       <div className="flex items-center gap-3 mb-3">
         <div
-          className="w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center text-white font-manrope font-semibold text-base flex-shrink-0"
+          className="w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center text-white font-sans font-semibold text-base flex-shrink-0"
           style={{ backgroundColor: avatarColor(name) }}
         >
           {initial}
         </div>
         <div className="min-w-0">
-          <div className="font-manrope font-semibold text-[var(--color-text-dark)] truncate">{name}</div>
+          <div className="font-sans font-semibold text-[var(--color-text-dark)] truncate">{name}</div>
           <div className="flex items-center gap-1">
             <StarRow rating={rating} />
             <GoogleIcon className="w-3.5 h-3.5 ml-1" />
@@ -121,7 +121,7 @@ export function Testimonial() {
         >
           <div className="flex items-center justify-center gap-2 mb-4">
             <GoogleIcon className="w-6 h-6" />
-            <span className="font-manrope text-sm font-medium text-neutral-500 uppercase tracking-widest">
+            <span className="font-sans text-sm font-medium text-neutral-500 uppercase tracking-widest">
               Google Reviews
             </span>
           </div>

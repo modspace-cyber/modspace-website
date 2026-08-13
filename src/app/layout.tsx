@@ -1,24 +1,20 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter, Manrope } from "next/font/google";
+import { Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ScrollToTop } from "@/components/ScrollToTop";
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
   display: "swap",
+  weight: ["500", "600"],
 });
 
-const inter = Inter({ 
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-montserrat",
   display: "swap",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-  display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -34,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${playfair.variable} ${inter.variable} ${manrope.variable} antialiased selection:bg-[var(--color-accent-gold)] selection:text-white`}
+        className={`${playfair.variable} ${montserrat.variable} antialiased selection:bg-[var(--color-accent-gold)] selection:text-white`}
       >
         {children}
         <ScrollToTop />

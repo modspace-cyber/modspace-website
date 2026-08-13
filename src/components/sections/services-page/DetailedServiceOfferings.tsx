@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeInUp, viewportConfig } from "@/lib/framer-variants";
 import { Home, Building2, Zap, X } from "lucide-react";
 import { useState } from "react";
+import { useFormModal } from "@/components/ui/FormModal";
 
 const SERVICES = {
   residential: {
@@ -188,7 +189,7 @@ function ServiceCard({
     >
       <button
         onClick={onViewDetails}
-        className="w-full h-80 bg-gradient-to-br from-[var(--color-accent-gold)] to-[#d4a574] rounded-2xl p-8 flex flex-col items-center justify-center text-center text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer"
+        className="w-full h-80 bg-gradient-to-br from-[var(--color-accent-gold)]/80 to-[#d4a574] rounded-2xl p-8 flex flex-col items-center justify-center text-center text-white shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer"
       >
         <Icon className="w-16 h-16 mb-4 opacity-90" />
         <h3 className="font-serif text-2xl md:text-3xl font-bold mb-3">
@@ -278,6 +279,7 @@ function ServiceModal({
 }
 
 export function DetailedServiceOfferings() {
+  const { openModal } = useFormModal();
   const [selectedCategory, setSelectedCategory] = useState<keyof typeof SERVICES | null>(null);
   const categories = Object.entries(SERVICES) as Array<
     [keyof typeof SERVICES, (typeof SERVICES)[keyof typeof SERVICES]]
@@ -324,9 +326,12 @@ export function DetailedServiceOfferings() {
             variants={fadeInUp}
             className="mt-16 md:mt-24 text-center"
           >
-            <p className="text-neutral-600 max-w-2xl mx-auto">
-              Each category represents our core expertise. Whether you're planning a residential transformation, corporate workspace, or architectural facade project, our team brings precision, creativity, and commitment to excellence.
-            </p>
+            <button
+              onClick={() => openModal('callback')}
+              className="mt-4 px-8 py-3 bg-[var(--color-accent-gold)] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
+            >
+              Request a Callback
+            </button>
           </motion.div>
         </div>
       </section>

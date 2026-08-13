@@ -17,7 +17,7 @@ export function About() {
           className="grid lg:grid-cols-2 gap-16 items-center"
         >
           <div>
-            <h2 className="font-manrope text-[var(--color-accent-gold)] tracking-[0.2em] uppercase text-sm font-semibold mb-4">
+            <h2 className="font-sans text-[var(--color-accent-gold)] tracking-[0.2em] uppercase text-sm font-semibold mb-4">
               Where design meets comfort
             </h2>
             <h3 className="font-serif text-4xl md:text-5xl leading-tight mb-8 text-white">

@@ -10,25 +10,38 @@ export function ServicesHero() {
   const router = useRouter();
 
   return (
-    <section className="relative md:min-h-screen bg-gradient-to-b from-neutral-50 to-white overflow-hidden pt-24 md:pt-32 pb-12 md:pb-20">
-      <div className="container mx-auto px-6 md:px-12">
+    <section className="relative md:min-h-screen bg-gradient-to-b from-neutral-50 to-white overflow-hidden pt-30 md:pt-48 pb-12 md:pb-20">
+      {/* Background Video */}
+      <video
+        src="/videos/Modern_luxury_interiors_bgvideo.mp4"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+
+      {/* Blur Overlay */}
+      <div className="absolute inset-0 backdrop-blur-sm bg-white/50 z-10" />
+
+      <div className="container mx-auto px-6 md:px-12 relative z-20">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-[var(--color-text-dark)] mb-6 leading-tight">
+          <h1 className="font-serif font-bold text-4xl md:text-6xl lg:text-7xl text-[var(--color-text-dark)] mb-6 leading-tight">
             Interior Design & Architectural Execution
           </h1>
 
-          <p className="text-lg md:text-xl text-neutral-600 mb-8 leading-relaxed">
-            Modspace Interior transforms residential and commercial spaces across Delhi NCR with Full-spectrum interior architecture, structural engineering, and custom furniture solutions built around your lifestyle.
+          <p className="text-lg md:text-xl text-neutral-700 mb-8 leading-relaxed">
+            Modspace Interior transforms residential and commercial spaces across Delhi NCR with Full-spectrum interior architecture, structural engineering, and custom furniture solutions.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <button
-              onClick={() => openModal("residential")}
+              onClick={() => openModal("callback")}
               className="px-8 py-4 bg-[var(--color-accent-gold)] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
             >
               Schedule a Design Consultation
