@@ -11,7 +11,7 @@ function StatItem({ value, label }: { value: number; label: string }) {
       <div className="font-serif text-4xl md:text-5xl lg:text-6xl text-[var(--color-accent-gold)] mb-2 flex items-center">
         <span ref={ref}>{displayValue}</span>+
       </div>
-      <div className="font-manrope text-sm md:text-base text-[var(--color-text-dark)] uppercase tracking-widest font-medium">
+      <div className="font-sans text-sm md:text-base text-[var(--color-text-dark)] uppercase tracking-widest font-medium">
         {label}
       </div>
     </div>

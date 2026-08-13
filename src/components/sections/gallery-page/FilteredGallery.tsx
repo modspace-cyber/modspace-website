@@ -47,7 +47,7 @@ function GalleryCard({ item, heightRatio }: { item: GalleryItem; heightRatio: st
       <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
         <div>
           <h3 className="text-white font-serif text-xl mb-1">{item.alt}</h3>
-          <p className="text-[var(--color-accent-gold)] font-manrope text-sm">{item.category}</p>
+          <p className="text-[var(--color-accent-gold)] font-sans text-sm">{item.category}</p>
         </div>
       </div>
     </motion.div>
@@ -75,7 +75,7 @@ export function FilteredGallery() {
               key={category}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "whitespace-nowrap px-6 py-2 rounded-full text-sm font-manrope font-medium transition-all",
+                "whitespace-nowrap px-6 py-2 rounded-full text-sm font-sans font-medium transition-all",
                 activeCategory === category 
                   ? "bg-[var(--color-accent-gold)] text-white" 
                   : "bg-white/5 text-neutral-400 hover:bg-white/10 hover:text-white border border-transparent hover:border-white/10"
