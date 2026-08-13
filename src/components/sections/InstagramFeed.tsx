@@ -36,7 +36,7 @@ export function InstagramFeed() {
   const visiblePosts = INSTAGRAM_POST_URLS.slice(index, index + itemsPerPage);
 
   return (
-    <section className="py-20 md:py-32 bg-[var(--color-light-primary)]">
+    <section className="py-20 md:py-32 bg-[var(--color-dark-primary)]">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial="hidden"
@@ -45,15 +45,15 @@ export function InstagramFeed() {
           variants={fadeInUp}
           className="text-center mb-12 md:mb-16"
         >
-          <span className="font-manrope text-sm font-medium text-[var(--color-accent-gold)] uppercase tracking-widest">
+          <span className="font-sans text-sm font-medium text-[var(--color-accent-gold)] uppercase tracking-widest">
             Follow our work
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight text-[var(--color-text-dark)] mt-4">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight text-[var(--color-text-light)] mt-4">
             Recent Projects on Instagram
           </h2>
-          <p className="text-neutral-600 text-base md:text-lg mt-4 max-w-2xl mx-auto">
+          {/* <p className="text-neutral-600 text-base md:text-lg mt-4 max-w-2xl mx-auto">
             Stay inspired by our latest interior design transformations
-          </p>
+          </p> */}
         </motion.div>
 
         <div className="relative flex items-stretch gap-3 md:gap-4">
@@ -81,9 +81,10 @@ export function InstagramFeed() {
                 exit={{ opacity: 0, x: -24 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
                 className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
+                suppressHydrationWarning
               >
                 {visiblePosts.map((url, i) => (
-                  <div key={i} className="flex justify-center overflow-hidden rounded-lg">
+                  <div key={i} className="flex justify-center overflow-hidden rounded-lg" suppressHydrationWarning>
                     <InstagramEmbed url={url} width={328} />
                   </div>
                 ))}

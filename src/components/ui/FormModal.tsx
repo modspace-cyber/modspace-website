@@ -58,7 +58,16 @@ function FormModalComponent() {
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData);
+    const data: Record<string, any> = {};
+
+    for (const [key, value] of formData.entries()) {
+      if (key === "services" || key === "scope") {
+        if (!data[key]) data[key] = [];
+        (data[key] as string[]).push(value as string);
+      } else {
+        data[key] = value;
+      }
+    }
 
     try {
       const response = await fetch("/api/submit-form", {
@@ -74,7 +83,11 @@ function FormModalComponent() {
           setSubmitMessage(null);
         }, 2000);
       } else {
-        setSubmitMessage({ type: "error", text: "Failed to submit. Please try again." });
+        const error = await response.json();
+        setSubmitMessage({
+          type: "error",
+          text: error.error || "Failed to submit. Please try again.",
+        });
       }
     } catch (error) {
       setSubmitMessage({ type: "error", text: "An error occurred. Please try again." });
@@ -113,7 +126,7 @@ function FormModalComponent() {
           {submitMessage && (
             <div
               className={cn(
-                "p-4 rounded-lg font-manrope",
+                "p-4 rounded-lg font-sans",
                 submitMessage.type === "success"
                   ? "bg-green-50 text-green-700 border border-green-200"
                   : "bg-red-50 text-red-700 border border-red-200"

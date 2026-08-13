@@ -9,78 +9,78 @@ const SERVICES = [
   {
     id: 1,
     number: "01",
-    title: "Luxury Residential Interior Design",
+    title: "Residential Interior Architecture & Design Contracting",
     description:
-      "Comprehensive spatial re-engineering for luxury apartments, penthouses, and private villas. We design cohesive interior landscapes, managing every detail from structural modifications and custom lighting schemes to luxury soft furnishings and custom cabinetry.",
+      "A single-point design and construction solution for private residences. We deliver custom space layouts, high-end finishing, integrated storage solutions, and luxury furnishings.",
     includes: [
-      "Architectural space planning",
-      "Material boards",
-      "Ceiling/lighting design",
-      "Modular kitchens",
-      "Master suite layouts",
+      "Concept development, Mood boards & 3D visuals",
+      "False ceiling design, ambient lighting & MEP drawings",
+      "Custom wardrobes, vanity units & luxury furniture integration",
+      "Natural stone flooring, hard surface masonry & wall finishes",
+      "Complete site supervision, procurement & turnkey handover",
     ],
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
+    video: "/videos/Architectural_hall_modular_kitchen.mp4",
     icon: Home,
     formType: "residential" as const,
   },
   {
     id: 2,
     number: "02",
-    title: "Interior Contracting & Site Execution",
+    title: "Exterior Elevation & Civil Contracting",
     description:
-      "A single-point contracting solution eliminating friction of managing multiple vendors. We take complete responsibility for structural alterations, civil construction, electrical and plumbing (MEP) execution, and final fitting installation.",
+      "Turnkey exterior transformations, structural civil works, and high-performance facade execution. From precision dry stone cladding and structural glazing to custom motorized louvers, we deliver engineered exteriors built for longevity.",
     includes: [
-      "Dedicated project engineering",
-      "Rigid site management",
-      "Civil alterations",
-      "MEP coordination",
-      "Guaranteed completion timelines",
+      "3D facade visualization & elevation drafting",
+      "ACP, HPL & terracotta rain-screen cladding",
+      "Structural glazing, DGU & curtain wall systems",
+      "Mechanical dry stone cladding & CNC masonry",
+      "Motorized louvers, canopies & weatherproofing",
     ],
-    image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&h=400&fit=crop",
+    video: "/videos/Drone_flying_over_building_facade.mp4",
     icon: Hammer,
     formType: "callback" as const,
   },
   {
     id: 3,
     number: "03",
-    title: "Commercial & Workplace Design",
+    title: "Workplace & Commercial Execution",
     description:
-      "Purpose-built interior environments for corporate offices, boutique retail outlets, and brand experience centers. We integrate ergonomic spatial planning with strong corporate branding to create workplaces optimized for both productivity and client impact.",
+      "Purpose-built commercial interior environments. From spatial strategy and ergonomic furniture layout to technical infrastructure, we turn raw core-and-shell spaces into fully functional, high-impact commercial properties.",
     includes: [
-      "Acoustic wall paneling",
-      "Modular workstations",
-      "Executive suites",
-      "HVAC coordination",
-      "Safety compliance",
+      "Workplace strategy & agile layout planning",
+      "Soundproofing, acoustic baffles & glass office partitions",
+      "Ergonomic modular workstations & executive boardroom suites",
+      "MEP, fire safety, HVAC & low-voltage cabling coordination",
+      "Commercial-grade flooring, wall cladding & durable finishes",
     ],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
+    video: "/videos/Camera_gliding_through_modern_office.mp4",
     icon: Building2,
     formType: "commercial" as const,
   },
   {
     id: 4,
     number: "04",
-    title: "Bespoke Millwork & Custom Furniture Manufacturing",
+    title: "Millwork & Luxury Furniture Production",
     description:
-      "Tailor-made furniture and joinery engineered specifically for your spatial dimensions. Operating with high-grade materials, our craftsmen create exclusive built-in cabinetry, wall paneling systems, and statement furniture pieces.",
+      "End-to-end custom furniture design and architectural joinery fabrication. From natural stone and timber selection to soft upholstery and metal integration, we craft exclusive built-in and free-standing interior elements.",
     includes: [
-      "3D shop drawings",
-      "Custom brass and marble inlay work",
-      "Architectural veneer selection",
-      "Premium soft upholstery",
-      "Bespoke fabrication",
+      "3D shop drawings & fabrication details",
+      "Architectural veneer & solid wood joinery",
+      "Custom marble, quartz & brass inlay work",
+      "Acoustic & decorative wall paneling systems",
+      "Custom sofas, dining tables & soft furnishings",
     ],
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop",
+    video: "/videos/Modern_walk-in_wardrobe.mp4",
     icon: Briefcase,
     formType: "callback" as const,
-  },
+},
 ];
 
 export function ServiceOfferings() {
   const { openModal } = useFormModal();
 
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section className="py-16 md:py-28 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial="hidden"
@@ -97,7 +97,7 @@ export function ServiceOfferings() {
           </p>
         </motion.div>
 
-        <div className="space-y-16 md:space-y-24">
+        <div className="space-y-14 md:space-y-20">
           {SERVICES.map((service, idx) => {
             const Icon = service.icon;
             const isEven = idx % 2 === 0;
@@ -111,12 +111,14 @@ export function ServiceOfferings() {
                 variants={fadeInUp}
                 className={`grid md:grid-cols-2 gap-12 items-center ${!isEven ? "md:grid-flow-dense" : ""}`}
               >
-                {/* Image */}
+                {/* Video */}
                 <div className={`${!isEven ? "md:col-start-2" : ""} overflow-hidden rounded-lg h-80 md:h-full`}>
-                  <img
-                    src={service.image}
-                    alt={service.title}
+                  <video
+                    src={service.video}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    autoPlay
+                    muted
+                    loop
                   />
                 </div>
 

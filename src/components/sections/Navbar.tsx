@@ -56,7 +56,7 @@ export function Navbar() {
           )}>MOD SPACE INTERIOR</span>
         </Link>
 
-        <ul className="flex items-center gap-6 font-manrope text-sm font-medium">
+        <ul className="flex items-center gap-6 font-sans text-sm font-medium">
           {NAV_LINKS.map((link) => (
             <li key={link.name}>
               <Link
