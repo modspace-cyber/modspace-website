@@ -10,7 +10,7 @@ export function ServicesHero() {
   const router = useRouter();
 
   return (
-    <section className="relative md:min-h-screen bg-gradient-to-b from-neutral-50 to-white overflow-hidden pt-24 md:pt-32 pb-16 md:pb-24">
+    <section className="relative md:min-h-screen bg-gradient-to-b from-neutral-50 to-white overflow-hidden pt-24 md:pt-32 pb-12 md:pb-20">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial="hidden"
